@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="conteiner">
+      <div class="headerText">
+        <p>
+          <strong>Its a small after all - learn about all its countres</strong>
+        </p>
+      </div>
+      <!-- ************************** -->
+      <form action="" id="searchForm">
+        <div id="inputOption">
+          <input
+            list="searchOptions"
+            type="text"
+            id="searchInput"
+            placeholder="Search for a country"
+          />
+          <datalist name="" id="searchOptions" hidden></datalist>
+        </div>
+
+        <img src="search.png" alt="search icon" />
+        <input
+          type="button"
+          value="GO"
+          id="searchBtn"
+          onclick="objectFromJson()"
+        />
+      </form>
+      <!-- ************************** -->
+
+      <div id="countryNameDiv">
+        <div id="countryName"></div>
+        <div id="countryFlagDiv">
+          <img id="countryFlag" src="" alt="" />
+        </div>
+      </div>
+      <!-- ************************** -->
+      <div id="infoConteiner">
+        <!-- ************************** -->
+
+        <div id="leftBox">
+          <div class="infoDiv">
+            <label for=""><strong>Languages:</strong></label>
+            <div id="myLanguagesDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>Population:</strong></label>
+            <div id="myPopulationDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>Capital:</strong></label>
+            <div id="myCapitalDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>Alternative spellings:</strong></label>
+            <div id="myAlternativeSpellingsDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>Region:</strong></label>
+            <div id="myRegionDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>Subregion:</strong></label>
+            <div id="mySubregionDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>Lititude:</strong></label>
+            <div id="myLititudeDiv"></div>
+          </div>
+          <div class="infoDiv">
+            <label for=""><strong>Longitude:</strong></label>
+            <div id="myLongitudeDiv"></div>
+          </div>
+          <div class="infoDiv">
+            <label for=""><strong>Time zones:</strong></label>
+            <div id="myTimezonesDiv"></div>
+          </div>
+        </div>
+        <!-- ************************** -->
+
+        <div id="rightBox">
+          <div class="infoDiv">
+            <label for=""><strong>Borders:</strong></label>
+            <div id="myBordersDiv"></div>
+          </div>
+          <div class="infoDiv">
+            <label for=""><strong>Native name:</strong></label>
+            <div id="myNativeNameDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>Currencies:</strong></label>
+            <div id="myCurrencieseDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>code:</strong></label>
+            <div id="myCodeeDiv"></div>
+          </div>
+
+          <div class="infoDiv">
+            <label for=""><strong>simbol:</strong></label>
+            <div id="mySimbolDiv"><img id="mySimbolImg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *************************************** -->
+    <select name="" id="searchOptions" hidden></select>
+    <!-- *************************************** -->
+    <script src="countries_list.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
